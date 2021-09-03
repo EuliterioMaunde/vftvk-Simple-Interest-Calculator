@@ -1,4 +1,51 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:#ffffff;}
+h1{color:#ced2d2;}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+footer{
+    padding-left: 0px!important;
+}
+.card button {
+    outline: 0;
+    color: white;
+    background-color: #ced2d2;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+.result_text{
+    background-color: yellow;
+}
+.title_text{
+    color: #ced2d2;
+}
+.div_button{
+    padding-bottom: 25px;
+}
+.div_form{
+    padding-top: 15px;
+}
+footer{
+    /*margin: 0px!important;*/
+    margin-top: -30px;
+    float: left;
+}
+button{
+    background-color: #a2a9a9;
+}
+.card button:hover {
+    opacity: 0.7;
+}
 
 
