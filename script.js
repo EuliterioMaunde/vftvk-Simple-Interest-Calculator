@@ -7,10 +7,12 @@ function compute()
     principal = parseFloat(principal);
     rate = parseFloat(rate);
     years = parseInt(years);
-
+    var d = new Date();
+    var year = d.getFullYear();
     var resuls='If you deposit : <span class="result_text">'+principal+'</span><br>' +
         'at an interest rate of : <span class="result_text">'+(rate+"%")+'</span><br>' +
-        'You will receive an amount of : <span class="result_text">'+(principal*rate*years)+'</span><br>';
+        'You will receive an amount of : <span class="result_text">'+(principal*rate*years)+'</span><br>' +
+        'In the year : <span class="result_text">'+(year+years)+'</span><br>';
     result.innerHTML=resuls;
 
 }
