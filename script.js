@@ -5,6 +5,8 @@ function compute()
     var years = document.getElementById("years").value;
     var result = document.getElementById("result");
     if (principal.trim()=="" || parseFloat(principal)<=0){
+        document.getElementById("principal").focus();
+
         alert("Enter a positive number");
         return false;
     }
