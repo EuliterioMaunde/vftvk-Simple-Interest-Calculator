@@ -4,6 +4,10 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var result = document.getElementById("result");
+    if (principal.trim()=="" || parseFloat(principal)<=0){
+        alert("Enter a positive number");
+        return false;
+    }
     principal = parseFloat(principal);
     rate = parseFloat(rate);
     years = parseInt(years);
@@ -14,6 +18,7 @@ function compute()
         'You will receive an amount of : <span class="result_text">'+(principal*rate*years)+'</span><br>' +
         'In the year : <span class="result_text">'+(year+years)+'</span><br>';
     result.innerHTML=resuls;
+    return true;
 
 }
 function init_values(){
